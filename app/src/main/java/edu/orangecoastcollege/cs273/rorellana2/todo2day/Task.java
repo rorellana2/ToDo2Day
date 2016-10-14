@@ -24,6 +24,18 @@ public class Task {
     }
 
     /**
+     * Creates a new <code>Task</code> from the user input, ID is irrelevant, will be
+     * assigned automatically by the database
+     *
+     * @param desc
+     * @param done
+     */
+    public Task(String desc, int done)
+    {
+        this(-1, desc, done);
+    }
+
+    /**
      * Creates a new <code>Task</code> from its id, description and status.
      * @param id The task id
      * @param desc The task description
